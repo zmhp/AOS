@@ -9,6 +9,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet"> 
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet"> 
 
+    <!-- animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
     <!-- custom styles -->
     <link rel="stylesheet" href="style.css">
 
@@ -23,21 +26,30 @@
 
     <!-- header.main-header start -->
     <header class="main-header">
-        <h1><span>Animate </span>On Scroll</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A, libero?</p>
+        <div>
+            <span class="animate__animated animate__fadeInLeft">Animate </span>
+            <h1 class="animate__animated animate__fadeInRight">On Scroll</h1>
+        </div>
+        <p class="header-text animate__animated animate__fadeIn">Lorem ipsum dolor sit amet consectetur adipisicing elit. A, libero?</p>
+        <p class="scroll animate__animated animate__fadeInUp">Scroll Down</p>
+        <ion-icon name="arrow-down-circle-outline" class="animate__animated animate__fadeInUp"></ion-icon>
     </header>
     <!-- header.main-header end -->
 
+
+    
     <!-- main.container start -->
     <main class="container">
 
+        <!-- ==================================== fade-[ up/right/down/left ] ====================================== -->
+
         <!-- section.card start -->
-        <section class="card">
+        <!-- <section class="card">
 
             <img src="img/image_1.jpg" alt="">
             
             <div>
-                <h3>Card One</h3>
+                <h2>No Animation on Scroll</h2>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni impedit, 
                     fugiat sed consequatur facilis iusto, dignissimos beatae quo delectus 
                     ratione, consectetur velit enim officia totam ab dolores harum! Porro, 
@@ -46,16 +58,16 @@
                 <a href="#" class="btn" >Read More..</a>
             </div>
 
-        </section>
+        </section> -->
         <!-- section.card end -->
 
         <!-- section.card start -->
-        <section class="card" data-aos="fade-left">
+        <section class="card" data-aos="fade-up">
 
-            <img src="img/image_2.jpg" alt="">
+            <img src="img/image_1.jpg" alt="">
             
             <div>
-                <h3>Card Two</h3>
+                <h2>Fade-Up</h2>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni impedit, 
                     fugiat sed consequatur facilis iusto, dignissimos beatae quo delectus 
                     ratione, consectetur velit enim officia totam ab dolores harum! Porro, 
@@ -73,7 +85,7 @@
             <img src="img/image_3.jpg" alt="">
             
             <div>
-                <h3>Card Three</h3>
+                <h2>Fade-Right</h2>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni impedit, 
                     fugiat sed consequatur facilis iusto, dignissimos beatae quo delectus 
                     ratione, consectetur velit enim officia totam ab dolores harum! Porro, 
@@ -86,30 +98,12 @@
         <!-- section.card end -->
 
         <!-- section.card start -->
-        <section class="card" data-aos="fade-left">
+        <section class="card" data-aos="fade-down">
 
             <img src="img/image_4.jpg" alt="">
             
             <div>
-                <h3>Card Four</h3>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni impedit, 
-                    fugiat sed consequatur facilis iusto, dignissimos beatae quo delectus 
-                    ratione, consectetur velit enim officia totam ab dolores harum! Porro, 
-                    doloribus.
-                </p>
-                <a href="#" class="btn" >Read More..</a>
-            </div>
-
-        </section>
-        <!-- section.card end -->
-
-        <!-- section.card start -->
-        <section class="card" data-aos="fade-right">
-
-            <img src="img/image_5.jpg" alt="">
-            
-            <div>
-                <h3>Card Five</h3>
+                <h2>Fade-Down</h2>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni impedit, 
                     fugiat sed consequatur facilis iusto, dignissimos beatae quo delectus 
                     ratione, consectetur velit enim officia totam ab dolores harum! Porro, 
@@ -124,10 +118,30 @@
         <!-- section.card start -->
         <section class="card" data-aos="fade-left">
 
-            <img src="img/image_6.jpg" alt="">
+            <img src="img/image_1.jpg" alt="">
             
             <div>
-                <h3>Card Six</h3>
+                <h2>Fade-Left</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni impedit, 
+                    fugiat sed consequatur facilis iusto, dignissimos beatae quo delectus 
+                    ratione, consectetur velit enim officia totam ab dolores harum! Porro, 
+                    doloribus.
+                </p>
+                <a href="#" class="btn" >Read More..</a>
+            </div>
+
+        </section>
+        <!-- section.card end -->
+
+        <!-- ==================================== fade-[ up/down ]-[ right/left ] ====================================== -->
+
+        <!-- section.card start -->
+        <section class="card" data-aos="fade-up-right">
+
+            <img src="img/image_5.jpg" alt="">
+            
+            <div>
+                <h2>Fade-Up-Right</h2>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni impedit, 
                     fugiat sed consequatur facilis iusto, dignissimos beatae quo delectus 
                     ratione, consectetur velit enim officia totam ab dolores harum! Porro, 
@@ -140,12 +154,306 @@
         <!-- section.card end -->
 
         <!-- section.card start -->
-        <section class="card" data-aos="fade-right">
+        <section class="card" data-aos="fade-up-left">
+
+            <img src="img/image_6.jpg" alt="">
+            
+            <div>
+                <h2>Fade-up-Left</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni impedit, 
+                    fugiat sed consequatur facilis iusto, dignissimos beatae quo delectus 
+                    ratione, consectetur velit enim officia totam ab dolores harum! Porro, 
+                    doloribus.
+                </p>
+                <a href="#" class="btn" >Read More..</a>
+            </div>
+
+        </section>
+        <!-- section.card end -->
+
+        <!-- section.card start -->
+        <section class="card" data-aos="fade-down-right">
 
             <img src="img/image_7.jpg" alt="">
             
             <div>
-                <h3>Card Seven</h3>
+                <h2>Fade-Down-Right</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni impedit, 
+                    fugiat sed consequatur facilis iusto, dignissimos beatae quo delectus 
+                    ratione, consectetur velit enim officia totam ab dolores harum! Porro, 
+                    doloribus.
+                </p>
+                <a href="#" class="btn" >Read More..</a>
+            </div>
+
+        </section>
+        <!-- section.card end -->
+
+        <!-- section.card start -->
+        <section class="card" data-aos="fade-down-left">
+
+            <img src="img/image_1.jpg" alt="">
+            
+            <div>
+                <h2>Fade-Down-Left</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni impedit, 
+                    fugiat sed consequatur facilis iusto, dignissimos beatae quo delectus 
+                    ratione, consectetur velit enim officia totam ab dolores harum! Porro, 
+                    doloribus.
+                </p>
+                <a href="#" class="btn" >Read More..</a>
+            </div>
+
+        </section>
+        <!-- section.card end -->
+
+        <!-- ==================================== flip-[ up/right/down/left ] ====================================== -->
+        
+        <!-- section.card start -->
+        <section class="card" data-aos="flip-up">
+
+            <img src="img/image_5.jpg" alt="">
+            
+            <div>
+                <h2>Flip-Up</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni impedit, 
+                    fugiat sed consequatur facilis iusto, dignissimos beatae quo delectus 
+                    ratione, consectetur velit enim officia totam ab dolores harum! Porro, 
+                    doloribus.
+                </p>
+                <a href="#" class="btn" >Read More..</a>
+            </div>
+
+        </section>
+        <!-- section.card end -->
+
+        <!-- section.card start -->
+        <section class="card" data-aos="flip-right">
+
+            <img src="img/image_6.jpg" alt="">
+            
+            <div>
+                <h2>Flip-Right</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni impedit, 
+                    fugiat sed consequatur facilis iusto, dignissimos beatae quo delectus 
+                    ratione, consectetur velit enim officia totam ab dolores harum! Porro, 
+                    doloribus.
+                </p>
+                <a href="#" class="btn" >Read More..</a>
+            </div>
+
+        </section>
+        <!-- section.card end -->
+
+        <!-- section.card start -->
+        <section class="card" data-aos="flip-down">
+
+            <img src="img/image_7.jpg" alt="">
+            
+            <div>
+                <h2>Flip-Down</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni impedit, 
+                    fugiat sed consequatur facilis iusto, dignissimos beatae quo delectus 
+                    ratione, consectetur velit enim officia totam ab dolores harum! Porro, 
+                    doloribus.
+                </p>
+                <a href="#" class="btn" >Read More..</a>
+            </div>
+
+        </section>
+        <!-- section.card end -->
+
+        <!-- section.card start -->
+        <section class="card" data-aos="flip-left">
+
+            <img src="img/image_1.jpg" alt="">
+            
+            <div>
+                <h2>Flip-Left</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni impedit, 
+                    fugiat sed consequatur facilis iusto, dignissimos beatae quo delectus 
+                    ratione, consectetur velit enim officia totam ab dolores harum! Porro, 
+                    doloribus.
+                </p>
+                <a href="#" class="btn" >Read More..</a>
+            </div>
+
+        </section>
+        <!-- section.card end -->
+
+        <!-- ==================================== zoom-in-[ /up/right/down/left ] ====================================== -->
+
+        <!-- section.card start -->
+        <section class="card" data-aos="zoom-in">
+
+            <img src="img/image_3.jpg" alt="">
+            
+            <div>
+                <h2>Zoom-In</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni impedit, 
+                    fugiat sed consequatur facilis iusto, dignissimos beatae quo delectus 
+                    ratione, consectetur velit enim officia totam ab dolores harum! Porro, 
+                    doloribus.
+                </p>
+                <a href="#" class="btn" >Read More..</a>
+            </div>
+
+        </section>
+        <!-- section.card end -->
+
+        <!-- section.card start -->
+        <section class="card" data-aos="zoom-in-up">
+
+            <img src="img/image_4.jpg" alt="">
+            
+            <div>
+                <h2>Zoom-In-Up</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni impedit, 
+                    fugiat sed consequatur facilis iusto, dignissimos beatae quo delectus 
+                    ratione, consectetur velit enim officia totam ab dolores harum! Porro, 
+                    doloribus.
+                </p>
+                <a href="#" class="btn" >Read More..</a>
+            </div>
+
+        </section>
+        <!-- section.card end -->
+
+        <!-- section.card start -->
+        <section class="card" data-aos="zoom-in-right">
+
+            <img src="img/image_1.jpg" alt="">
+            
+            <div>
+                <h2>Zoom-In-Right</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni impedit, 
+                    fugiat sed consequatur facilis iusto, dignissimos beatae quo delectus 
+                    ratione, consectetur velit enim officia totam ab dolores harum! Porro, 
+                    doloribus.
+                </p>
+                <a href="#" class="btn" >Read More..</a>
+            </div>
+
+        </section>
+        <!-- section.card end -->
+
+        <!-- section.card start -->
+        <section class="card" data-aos="zoom-in-down">
+
+            <img src="img/image_5.jpg" alt="">
+            
+            <div>
+                <h2>Zoom-In-Down</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni impedit, 
+                    fugiat sed consequatur facilis iusto, dignissimos beatae quo delectus 
+                    ratione, consectetur velit enim officia totam ab dolores harum! Porro, 
+                    doloribus.
+                </p>
+                <a href="#" class="btn" >Read More..</a>
+            </div>
+
+        </section>
+        <!-- section.card end -->
+
+        <!-- section.card start -->
+        <section class="card" data-aos="zoom-in-left">
+
+            <img src="img/image_6.jpg" alt="">
+            
+            <div>
+                <h2>Zoom-In-Left</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni impedit, 
+                    fugiat sed consequatur facilis iusto, dignissimos beatae quo delectus 
+                    ratione, consectetur velit enim officia totam ab dolores harum! Porro, 
+                    doloribus.
+                </p>
+                <a href="#" class="btn" >Read More..</a>
+            </div>
+
+        </section>
+        <!-- section.card end -->
+
+        <!-- ==================================== zoom-out-[ /up/right/down/left ] ====================================== -->
+
+        <!-- section.card start -->
+        <section class="card" data-aos="zoom-out">
+
+            <img src="img/image_3.jpg" alt="">
+            
+            <div>
+                <h2>Zoom-Out</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni impedit, 
+                    fugiat sed consequatur facilis iusto, dignissimos beatae quo delectus 
+                    ratione, consectetur velit enim officia totam ab dolores harum! Porro, 
+                    doloribus.
+                </p>
+                <a href="#" class="btn" >Read More..</a>
+            </div>
+
+        </section>
+        <!-- section.card end -->
+
+        <!-- section.card start -->
+        <section class="card" data-aos="zoom-out-up">
+
+            <img src="img/image_4.jpg" alt="">
+            
+            <div>
+                <h2>Zoom-Out-Up</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni impedit, 
+                    fugiat sed consequatur facilis iusto, dignissimos beatae quo delectus 
+                    ratione, consectetur velit enim officia totam ab dolores harum! Porro, 
+                    doloribus.
+                </p>
+                <a href="#" class="btn" >Read More..</a>
+            </div>
+
+        </section>
+        <!-- section.card end -->
+
+        <!-- section.card start -->
+        <section class="card" data-aos="zoom-out-right">
+
+            <img src="img/image_1.jpg" alt="">
+            
+            <div>
+                <h2>Zoom-Out-Right</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni impedit, 
+                    fugiat sed consequatur facilis iusto, dignissimos beatae quo delectus 
+                    ratione, consectetur velit enim officia totam ab dolores harum! Porro, 
+                    doloribus.
+                </p>
+                <a href="#" class="btn" >Read More..</a>
+            </div>
+
+        </section>
+        <!-- section.card end -->
+
+        <!-- section.card start -->
+        <section class="card" data-aos="zoom-out-down">
+
+            <img src="img/image_5.jpg" alt="">
+            
+            <div>
+                <h2>Zoom-Out-Down</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni impedit, 
+                    fugiat sed consequatur facilis iusto, dignissimos beatae quo delectus 
+                    ratione, consectetur velit enim officia totam ab dolores harum! Porro, 
+                    doloribus.
+                </p>
+                <a href="#" class="btn" >Read More..</a>
+            </div>
+
+        </section>
+        <!-- section.card end -->
+
+        <!-- section.card start -->
+        <section class="card" data-aos="zoom-out-left">
+
+            <img src="img/image_6.jpg" alt="">
+            
+            <div>
+                <h2>Zoom-Out-Left</h2>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni impedit, 
                     fugiat sed consequatur facilis iusto, dignissimos beatae quo delectus 
                     ratione, consectetur velit enim officia totam ab dolores harum! Porro, 
@@ -181,6 +489,9 @@
             duration : 1000     
         });
     </script>
+
+    <!-- Ionicons Icons -->
+    <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
 
 </body>
 </html>

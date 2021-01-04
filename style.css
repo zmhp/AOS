@@ -7,8 +7,9 @@
 
 body {
     font-family: 'Roboto Condensed','Oswald', sans-serif ;
-    font-size: 1.3rem ; /* 1rem = 16px */
+    font-size: 1.4rem ; /* 1rem = 16px */
     background-color: #EAE8DC;
+    color : white;
 }
 
 a {
@@ -17,11 +18,11 @@ a {
 }
 
 .main-header{
-    height :45vh;
+    height :100vh;
 
     /* using flex box to bring everything in center */
     display : flex ; /* makes everything side by side ( we dont want that )*/
-    flex-direction: column; /* flexing everthing vertically */
+    flex-direction : column; /* flexing everthing vertically */
     align-items : center;
     justify-content: center;
     text-align: center;
@@ -29,21 +30,46 @@ a {
 
 }
 
+.main-header>div{
+    display : flex ; /* makes everything side by side ( we dont want that )*/
+    flex-direction : row; /* flexing everthing vertically */
+}
+
 .main-header h1{
     font-size: 4rem;
     margin-bottom: 1rem;
-    line-height : 1.2;
-    color : #8E8D89;
+    line-height: 1.2;
+    color: #8E8D89;
+    display: inline-grid;
+    align-items: end;
+    padding: 0.5rem;
+    animation-duration: 2s;
 }
 
-.main-header h1 span {
+.main-header span {
     font-family: 'Oswald', sans-serif ;
     font-size: 8rem;
     color : #E85A50;
+    animation-duration: 4s;
 }
 
-.main-header p {
+.main-header .header-text {
     font-size: 2rem;
+    color: #333;
+    animation-duration: 3s;
+}
+
+.main-header .scroll{
+    font-size: 1.5rem;
+    margin-top: 6rem;
+    font-weight: 600;
+    color : #E85A50;
+}
+
+.main-header ion-icon {
+    font-size: 36px;
+    color: #E85A50;
+    animation-duration: 4s;
 }
 
 .container{
@@ -51,6 +77,7 @@ a {
     margin : auto; /* center */ 
     overflow: auto;
     padding : 0 2rem ; /* 0 from top and bottom ,  2rem from left and right */
+    overflow: hidden;
 }
 
 img{
@@ -63,10 +90,19 @@ img{
     grid-template-columns: repeat(2 , 1fr); /* repeating ( 1 fraction 1 fraction ) 2 times*/
     grid-gap: 2rem;
     background-color: #E88073;
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
+    box-shadow: #8E8D89 0.75rem 0.75rem 0.75rem;
 }
 
-.card h3{
+.card > div {
+    display: flex;
+    flex-direction: column;
+    align-items : center;
+    justify-content: center;
+    text-align: center;
+}
+
+.card h2{
     margin-bottom: 2rem;
 }
 
@@ -87,6 +123,7 @@ img{
     padding: 0.8rem 1.8rem;
     margin-top: 2rem;
     cursor : pointer;
+    box-shadow: #e85a50 0.75rem 0.75rem 0.75rem;
 }
 
 .btn:hover{
@@ -102,6 +139,7 @@ footer{
     text-align: center;
     align-items : center;
     justify-content: center;
+    margin-top : 2rem;
 }
 
 /* the card image comes on top of the card description */
@@ -109,6 +147,9 @@ footer{
 
     .card{
         display: block;
+    }
+    .main-header > div {
+        flex-direction: column;
     }
 
 }
